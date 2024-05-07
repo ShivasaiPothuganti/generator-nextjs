@@ -222,7 +222,7 @@ export const NavBar = () => {
                 </a>
               ) :
                 <a target="_blank" rel="noopener noreferrer">
-                  <button className="vvd" onClick={() => {signIn()}}>
+                  <button className="vvd" onClick={() => {signIn(['keycloak'])}}>
                     <span>Sign In</span>
                   </button>
                 </a>

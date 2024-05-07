@@ -1,4 +1,3 @@
-
 const DocsPage = () => {
   return (
     <div className="docs-page">
@@ -7,13 +6,13 @@ const DocsPage = () => {
         <p>Welcome to the Microservices Documentation. This guide provides insights into the microservices that power your application.</p>
 
         <h2>Understanding Your Microservices</h2>
-        <p>Your application consists of multiple microservices collaborating to provide functionality. Currently, you have a total of <%= apiServers.length %> microservices.</p>
+        <p>Your application consists of multiple microservices collaborating to provide functionality. Currently, you have a total of 3 microservices.</p>
 
         <h2>Getting Started in Development Mode</h2>
 
         <h4>Booting up the Required Services</h4>
 
-        <p>If you have multiple microservices or a gateway, navigate to one of the gateway services. If your application architecture doesn't include
+        <p>If you have multiple microservices or a gateway, navigate to one of the gateway services. If your application architecture doesn&apos;t include
           a gateway service, navigate to any microservice.</p>
         <p>Once inside the gateway service or microservice, run the additional services necessary to launch your entire application.</p>
 
@@ -40,29 +39,29 @@ const DocsPage = () => {
         </ol>
 
         <h2>Resolving Cross-Origin Issues in Development Mode</h2>
-        <p>If you encounter cross-origin issues while running the UI application in the development environment, don't worry. Here's how to address it:</p>
+        <p>If you encounter cross-origin issues while running the UI application in the development environment, don&apos;t worry. Here&apos;s how to address it:</p>
 
         <ol>
           <li>Open your Spring Boot application.</li>
           <li>Navigate to: <code>src/main/resources/config</code>.</li>
           <li>Locate the <code>application-dev.yml</code> file.</li>
-          <li>Add your UI application's origin to the <code>allowed-origins</code> section:</li>
+          <li>Add your UI application&apos;s origin to the <code>allowed-origins</code> section:</li>
         </ol>
 
         <pre>
           cors:<br />
-          &nbsp;&nbsp;allowed-origins: 'http://your-ui-origin'
+          &nbsp;&nbsp;allowed-origins: &apos;http://your-ui-origin&apos;
         </pre>
 
-        <p>Remember to replace <code>http://your-ui-origin</code> with your UI application's actual URL.</p>
+        <p>Remember to replace <code>http://your-ui-origin</code> with your UI application&apos;s actual URL.</p>
 
         <pre>
           Just for your reference on how to add allowed-origins:<br /><br />
           cors:<br />
-          &nbsp;&nbsp;allowed-origins: 'http://localhost:3000,http://localhost:4200'
+          &nbsp;&nbsp;allowed-origins: &apos;http://localhost:3000,http://localhost:4200&apos;
         </pre>
 
-        <p>By following these steps, you'll ensure a smooth cross-origin experience during development.</p>
+        <p>By following these steps, you&apos;ll ensure a smooth cross-origin experience during development.</p>
       </div>
     </div>
   );

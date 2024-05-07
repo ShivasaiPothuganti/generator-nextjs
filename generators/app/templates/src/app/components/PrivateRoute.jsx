@@ -2,14 +2,16 @@
 
 
 import { signIn, useSession } from "next-auth/react";
+import {redirect} from "next/navigation";
 import React from 'react'
 
 function PrivateRoute({children}) {
     const authData = useSession({
-        required:true,
         status:'unauthenticated',
-        onUnauthenticated:()=>{
-            signIn();
+        onUnauthenticated: ()=>{
+            console.log("not authenticated");
+            signIn('keycloak');
+            console.log('after authentication');
         }
     });
     const {status} = authData;

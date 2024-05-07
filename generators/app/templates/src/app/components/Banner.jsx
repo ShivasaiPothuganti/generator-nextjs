@@ -64,7 +64,7 @@ export const Banner = ({projectName,wedaaDocsUrl}) => {
                   <br></br>
                   WeDAA gets you started fast, while offering flexibility for your creative touch.
                   Explore organized code with user-friendly docs, customize effortlessly, and follow best practices effortlessly for a winning app.
-                  With quick iterations and a supportive community, your coding journey begins here. Let's build something amazing together!
+                  With quick iterations and a supportive community, your coding journey begins here. Let&apos;s build something amazing together!
                   </p>
                   <button onClick={() => window.open(wedaaDocsUrl, '_blank')} className="get-started-button">Get Started <ArrowRightCircle size={25} />
                   </button>
